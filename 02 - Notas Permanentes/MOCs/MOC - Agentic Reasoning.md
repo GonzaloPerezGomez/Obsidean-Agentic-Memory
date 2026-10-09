@@ -70,6 +70,9 @@ fecha_creacion: "2026-09-22"
 - [[MEM1]] — Estado interno compartido guiado por razonamiento para memoria constante
 - [[MemSkill]] — Operaciones de memoria aprendibles y evolutivas
 - [[MemEvolve]] — Meta-evolución de la arquitectura del sistema de memoria
+- [[Zep]] — Arquitectura de grafo de conocimiento temporal jerárquico
+- [[Dynamic Cheatsheet]] — Test-time learning con chuletas auto-curadas
+- [[ARIA]] — Agente adaptativo con test-time learning y human-in-the-loop
 - [[Memoria a Largo Plazo (Long-term Memory)]]
 - [[Retrieval Augmented Generation (RAG)]]
 - [[Memory Architectures]]
@@ -91,6 +94,9 @@ fecha_creacion: "2026-09-22"
 ### Seguridad y Riesgos
 - [[Misevolution]] — Riesgos emergentes en la auto-evolución (modelo, memoria, herramientas, workflow)
 
+### Benchmarks y Evaluaciones
+- [[Evo-Memory]] — Evaluación de memoria auto-evolutiva en task streams
+
 ### Formalismos y Algoritmos RL
 - [[POMDP]]
 - [[Dec-POMDP]]
@@ -101,17 +107,21 @@ fecha_creacion: "2026-09-22"
 
 - [[weiSurveyAgenticReasoning2026]] — ⭐ Survey comprehensivo del campo (Wei et al., 2026)
 - [[shaoYourAgentMay2026]] — Misevolution: riesgos emergentes en agentes auto-evolutivos (Shao et al., 2026)
+- [[weiEvoMemoryBenchmarkingLLM2026]] — Evo-Memory: benchmark para memoria auto-evolutiva (Wei et al., 2026)
+- [[rasmussenZepTemporalKnowledge2025]] — Zep: arquitectura de grafo de conocimiento temporal (Rasmussen et al., 2025)
+- [[suzgunDynamicCheatsheetTestTime2025]] — Dynamic Cheatsheet: test-time learning (Suzgun et al., 2025)
+- [[heEnablingSelfImprovingAgents2025]] — ARIA: test-time learning con human-in-the-loop (He et al., 2025)
 - [[wuAgenticReasoningStreamlined2025]] — Framework con Mind-Map + Web-Search agents (Wu et al., 2025)
 - [[gutierrezRAGMemoryNonParametric2025]] — HippoRAG 2: de RAG a memoria bio-inspirada (Gutiérrez et al., 2025)
 - [[liMemOSMemoryOS2025]] — MemOS: memoria como recurso de sistema operativo (Li et al., 2025)
 - [[chhikaraMem0BuildingProductionReady2025]] — Mem0: memoria escalable para agentes en producción (Chhikara et al., 2025)
 - [[behrouzTitansLearningMemorize2024]] — Titans: memoria neural a largo plazo en test-time (Behrouz et al., 2024)
 - [[wangMIRIXMultiAgentMemory2025]] — MIRIX: memoria multi-agente modular y multimodal (Wang & Chen, 2025)
-- [[yuMemAgentReshapingLongContext2026]] — MemAgent: agente de memoria entrenado con RL para contextos ultra-largos (Yu et al., 2026)
-- [[zhouMEM1LearningSynergize2025]] — MEM1: RL para sinergia de memoria y razonamiento constante (Zhou et al., 2025)
-- [[zhangMemSkillLearningEvolving2026]] — MemSkill: operaciones de memoria como skills evolutivos (Zhang et al., 2026)
-- [[zhangMemEvolveMetaEvolutionAgent2025]] — MemEvolve: meta-evolución de arquitecturas de memoria (Zhang et al., 2025)
-- [[yuDAPOOpenSourceLLM2025]] — DAPO: sistema RL a escala y de código abierto para reasoning models (Yu et al., 2025)
+- [[yuMemAgentReshapingLongContext2026]] — MemAgent: agente de memoria entrenado con RL (Yu et al., 2026)
+- [[zhouMEM1LearningSynergize2025]] — MEM1: RL para sinergia de memoria y razonamiento (Zhou et al., 2025)
+- [[zhangMemSkillLearningEvolving2026]] — MemSkill: operaciones de memoria como skills (Zhang et al., 2026)
+- [[zhangMemEvolveMetaEvolutionAgent2025]] — MemEvolve: meta-evolución de memoria (Zhang et al., 2025)
+- [[yuDAPOOpenSourceLLM2025]] — DAPO: sistema RL a escala para reasoning models (Yu et al., 2025)
 - [[wangPlanandSolvePromptingImproving2023]] — Plan-and-Solve zero-shot prompting (Wang et al., 2023)
 - [[zhouLeasttoMostPromptingEnables2023]] — Least-to-Most Prompting (Zhou et al., 2023)
 
