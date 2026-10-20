@@ -36,4 +36,5 @@ Es uno de los frameworks fundacionales del agentic reasoning. Numerosas extensio
 
 ## Referencias
 
+- [[yaoReActSynergizingReasoning2023]] — Paper original que introduce el framework ReAct
 - [[weiSurveyAgenticReasoning2026]] — Mencionado como framework fundacional en múltiples secciones

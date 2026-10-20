@@ -13,13 +13,13 @@ estado: "#estado/borrador"
 
 ## Información
 
-| Campo | Detalle |
-|-------|---------|
-| **Fecha** | {{date}} |
-| **Hora** | |
-| **Lugar / Plataforma** | |
-| **Participantes** | |
-| **Convocado por** | |
+| Campo                  | Detalle  |
+| ---------------------- | -------- |
+| **Fecha**              | {{date}} |
+| **Hora**               |          |
+| **Lugar / Plataforma** |          |
+| **Participantes**      |          |
+| **Convocado por**      |          |
 
 ---
 

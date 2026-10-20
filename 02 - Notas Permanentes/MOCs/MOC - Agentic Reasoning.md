@@ -73,6 +73,8 @@ fecha_creacion: "2026-09-22"
 - [[Zep]] — Arquitectura de grafo de conocimiento temporal jerárquico
 - [[Dynamic Cheatsheet]] — Test-time learning con chuletas auto-curadas
 - [[ARIA]] — Agente adaptativo con test-time learning y human-in-the-loop
+- [[A-MEM]] — Memoria agéntica auto-organizada basada en principios de Zettelkasten
+- [[MSM-Mem]] — Memoria médica multimodal estructurada (semántica, episódica, visual)
 - [[Memoria a Largo Plazo (Long-term Memory)]]
 - [[Retrieval Augmented Generation (RAG)]]
 - [[Memory Architectures]]
@@ -87,6 +89,7 @@ fecha_creacion: "2026-09-22"
 ### Arquitecturas de Agentes
 - [[ReAct]]
 - [[Reflexion]]
+- [[ClinicalAgents]] — Orquestación MCTS con memoria dual para diagnóstico clínico
 - [[AutoGPT]]
 - [[LangChain Agents]]
 - [[Multi-Agent Debate]]
@@ -106,6 +109,10 @@ fecha_creacion: "2026-09-22"
 ## Papers Clave
 
 - [[weiSurveyAgenticReasoning2026]] — ⭐ Survey comprehensivo del campo (Wei et al., 2026)
+- [[yaoReActSynergizingReasoning2023]] — ReAct: sinergia de razonamiento y acción en LLMs (Yao et al., 2023)
+- [[xuAMEMAgenticMemory2025]] — A-MEM: memoria agéntica estructurada estilo Zettelkasten (Xu et al., 2025)
+- [[geClinicalAgentsMultiAgentOrchestration2026]] — ClinicalAgents: orquestación MCTS y Dual-Memory clínica (Ge et al., 2026)
+- [[jabinMSMMemUniversalMedical2019]] — MSM-Mem: memoria médica multimodal estructurada (Jabin et al., 2019)
 - [[shaoYourAgentMay2026]] — Misevolution: riesgos emergentes en agentes auto-evolutivos (Shao et al., 2026)
 - [[weiEvoMemoryBenchmarkingLLM2026]] — Evo-Memory: benchmark para memoria auto-evolutiva (Wei et al., 2026)
 - [[rasmussenZepTemporalKnowledge2025]] — Zep: arquitectura de grafo de conocimiento temporal (Rasmussen et al., 2025)
