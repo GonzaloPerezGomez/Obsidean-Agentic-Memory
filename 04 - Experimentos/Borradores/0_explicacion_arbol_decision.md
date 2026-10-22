@@ -7,3 +7,8 @@
     - **Teacher Forcing:** El simulador le da la prueba estándar y el resultado real del árbol (independientemente de si el agente acertó o no la prueba preliminar), garantizando que el agente siempre evalúe las bifurcaciones reales del caso.
     - **Consolidación en Memoria:** El agente debe integrar los nuevos resultados médicos en su base de datos.
     - **Siguiente Paso:** Tras otro borrado de chat, el agente decide la siguiente acción consultando su memoria actualizada. El bucle se repite hasta que el árbol de decisión concluye.
+
+
+Problema:
+
+En la primera etapa se evalúa también de forma directa el conocimineto medico del modelo. Esto podria interferir con la evaluacion de como de bien guarda el modelo la informacion

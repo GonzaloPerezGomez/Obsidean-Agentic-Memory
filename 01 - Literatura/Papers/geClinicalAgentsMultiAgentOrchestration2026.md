@@ -62,7 +62,7 @@ ClinicalAgents estructura su sistema en tres componentes esenciales:
 
 ## Resultados Clave
 
-- **Evaluación en MedChain (pipeline clínico de 5 etapas)**: Supera con holgura a baselines single-agent (ej. GPT-4) y multi-agent en las 5 etapas:
+- **Evaluación en [[MedChain]] (pipeline clínico de 5 etapas)**: Supera con holgura a baselines single-agent (ej. GPT-4) y multi-agent en las 5 etapas:
   - *Task 1 (Referral)*: Alta precisión de triaje y asignación de departamento (IoU).
   - *Task 2 (Test Ordering)*: Mayor cobertura y especificidad en pruebas solicitadas (IoU superior).
   - *Task 3 (Examination)*: Mayor fidelidad diagnóstica en informes de imágenes médicas evaluados con DocLens.

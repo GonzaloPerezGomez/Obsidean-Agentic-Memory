@@ -90,6 +90,8 @@ fecha_creacion: "2026-09-22"
 - [[ReAct]]
 - [[Reflexion]]
 - [[ClinicalAgents]] — Orquestación MCTS con memoria dual para diagnóstico clínico
+- [[MedAgents]] — Colaboración multidisciplinar multi-agente en comités médicos
+- [[AMIE]] — Agente conversacional interactivo para diagnóstico diferencial (DDx)
 - [[AutoGPT]]
 - [[LangChain Agents]]
 - [[Multi-Agent Debate]]
@@ -99,6 +101,8 @@ fecha_creacion: "2026-09-22"
 
 ### Benchmarks y Evaluaciones
 - [[Evo-Memory]] — Evaluación de memoria auto-evolutiva en task streams
+- [[AgentClinic]] — Benchmark interactivo multimodal en consultas clínicas simuladas
+- [[MedXpertQA]] — Benchmark médico multimodal de nivel subespecialista y razonamiento o1-like
 
 ### Formalismos y Algoritmos RL
 - [[POMDP]]
@@ -109,10 +113,14 @@ fecha_creacion: "2026-09-22"
 ## Papers Clave
 
 - [[weiSurveyAgenticReasoning2026]] — ⭐ Survey comprehensivo del campo (Wei et al., 2026)
+- [[mcduffAccurateDifferentialDiagnosis2025]] — AMIE: diagnóstico diferencial clínico interactivo en Nature (McDuff et al., 2025)
+- [[schmidgallAgentClinicMultimodalAgent2025]] — AgentClinic: benchmark multimodal en clínicas simuladas (Schmidgall et al., 2025)
+- [[geClinicalAgentsMultiAgentOrchestration2026]] — ClinicalAgents: orquestación MCTS y Dual-Memory clínica (Ge et al., 2026)
+- [[tangMedAgentsLargeLanguage2024]] — MedAgents: deliberación colegiada de agentes médicos (Tang et al., 2024)
+- [[zuoMedXpertQABenchmarkingExpertLevel2025]] — MedXpertQA: benchmark médico de alta dificultad y razonamiento (Zuo et al., 2025)
+- [[jabinMSMMemUniversalMedical2019]] — MSM-Mem: memoria médica multimodal estructurada (Jabin et al., 2019)
 - [[yaoReActSynergizingReasoning2023]] — ReAct: sinergia de razonamiento y acción en LLMs (Yao et al., 2023)
 - [[xuAMEMAgenticMemory2025]] — A-MEM: memoria agéntica estructurada estilo Zettelkasten (Xu et al., 2025)
-- [[geClinicalAgentsMultiAgentOrchestration2026]] — ClinicalAgents: orquestación MCTS y Dual-Memory clínica (Ge et al., 2026)
-- [[jabinMSMMemUniversalMedical2019]] — MSM-Mem: memoria médica multimodal estructurada (Jabin et al., 2019)
 - [[shaoYourAgentMay2026]] — Misevolution: riesgos emergentes en agentes auto-evolutivos (Shao et al., 2026)
 - [[weiEvoMemoryBenchmarkingLLM2026]] — Evo-Memory: benchmark para memoria auto-evolutiva (Wei et al., 2026)
 - [[rasmussenZepTemporalKnowledge2025]] — Zep: arquitectura de grafo de conocimiento temporal (Rasmussen et al., 2025)
@@ -154,4 +162,22 @@ fecha_creacion: "2026-09-22"
 
 ## Recursos
 
-> Enlazar recursos desde `05 - Recursos/`
+### Datasets y Benchmarks Médicos
+- [[MedChain]] — Benchmark clínico interdependiente de 5 etapas (12k casos)
+- [[AgentClinic-Benchmark]] — Entorno interactivo de simulación clínica con información incompleta
+- [[MedXpertQA]] — Benchmark médico multimodal de nivel subespecialista (4.460 preguntas)
+- [[NEJM-CPC]] — Casos clínicos de diagnóstico diferencial de alta complejidad (ensayo AMIE en Nature)
+- [[MIMIC-CXR]] — Base de datos masiva de radiografías de tórax e informes (Beth Israel / MIT)
+- [[MedQA]] — Exámenes de licenciatura médica (USMLE)
+- [[PubMedQA]] — Preguntas de razonamiento basadas en resúmenes biomédicos
+- [[MedMCQA]] — Exámenes de acceso a especialidad médica en la India (194k preguntas)
+- [[MMLU-Medical]] — Subconjuntos de medicina y biología de MMLU
+- [[MedDG]] — Diálogos clínicos reales paciente-médico (gastroenterología)
+- [[PathVQA]] — Preguntas y respuestas visuales en anatomía patológica
+- [[MedBullets]] — Viñetas clínicas de casos de estudio paso a paso
+
+### Datasets y Benchmarks de Razonamiento Agéntico y Memoria
+- [[Evo-Memory-Benchmark]] — Benchmark de secuencias continuas de tareas y memoria auto-evolutiva
+- [[LOCOMO]] — Benchmark de memoria conversacional a largo plazo
+- [[ALFWorld]] — Toma de decisiones interactiva en entornos embodied de texto
+- [[HotpotQA]] — Preguntas y respuestas con razonamiento multi-salto sobre Wikipedia

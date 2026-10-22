@@ -1,14 +1,42 @@
+---
+titulo: "MedChain"
+tags:
+  - dataset
+  - recurso
+  - clinical
+  - multimodal
+  - sequential
+fuente: "https://github.com/ZhuohanGe/ClinicalAgents-Code"
+fecha_creacion: "2026-10-22"
+---
 
-is organized as a sequential, interdependent clinical workflow:  
-	Task 1 → Task 2 → Task 3 → Task 4 → Task 5.  
-Outputs from earlier stages are explicitly fed into subsequent ones, enforcing cross-stage correlation and sequential consistency across the pipeline. Concretely, the five stage-level tasks and their evaluation metrics are:
+# MedChain
 
-• Task 1: Specialty Referral determines case urgency and routes the patient to an appropriate clinical department. We use Accuracy for first-level department and Intersection over Union (IoU) for second-level department assignment. 
+## Descripción
 
-• Task 2: Test Ordering specifies examinations/tests to be ordered. We use IoU to measure set overlap between predicted and reference medical items (coverage and precision). 
+> Benchmark clínico estructurado como un flujo de trabajo secuencial e interdependiente de 5 etapas, donde el resultado de cada fase condiciona a las posteriores, imitando el ciclo completo de atención hospitalaria real de un paciente.
 
-• Task 3: Examination summarizes the results of requested examinations, including medical image interpretation and report drafting. We use DocLens [45] to assess the quality of generated image interpretation compared to references. 
+A diferencia de los benchmarks estáticos de opción múltiple, MedChain obliga al agente a encadenar decisiones a lo largo de todo el proceso asistencial: desde la llegada del paciente hasta el tratamiento final.
 
-• Task 4: Diagnosis integrates evidence from Tasks 1–3 to produce a diagnostic conclusion. We use LLM-as-a-Judge to evaluate diagnostic correctness and reasoning coherence. 
+## Estructura de las 5 Etapas y Métricas
 
-• Task 5: Treatment formulates a patient-specific treatment plan under clinical constraints. We use IoU to measure overlap between predicted and reference treatment items.
+1. **Task 1: Specialty Referral (Derivación y Triaje):** Determina la urgencia y remite al paciente al departamento adecuado.
+   - *Métrica:* Accuracy para el departamento de nivel 1 e **IoU (*Intersection over Union*)** para subespecialidades de nivel 2.
+2. **Task 2: Test Ordering (Solicitud de Pruebas):** Prescribe las exploraciones y analíticas necesarias bajo sospecha clínica.
+   - *Métrica:* **IoU** entre las pruebas solicitadas y las recomendadas por guías clínicas (penaliza tanto la omisión como el sobrediagnóstico).
+3. **Task 3: Examination (Interpretación de Exploraciones e Imagen):** Resume los hallazgos y redacta el informe radiológico o anatomopatológico a partir de imágenes médicas.
+   - *Métrica:* **DocLens** para evaluar la fidelidad diagnóstica de los informes generados.
+4. **Task 4: Diagnosis (Diagnóstico Integrador):** Sintetiza las pruebas de las etapas 1 a 3 para emitir el diagnóstico definitivo.
+   - *Métrica:* **LLM-as-a-Judge** para corrección clínica y coherencia del razonamiento.
+5. **Task 5: Treatment (Plan de Tratamiento):** Diseña el plan terapéutico individualizado.
+   - *Métrica:* **IoU** sobre el conjunto de fármacos y pautas clínicas prescritas.
+
+## Características Principales
+
+- **Tamaño:** 12.163 casos clínicos.
+- **Modalidad:** Multimodal (Texto clínico + Imágenes médicas).
+- **Formato:** Pipeline dependiente de 5 etapas.
+
+## Papers que lo utilizan en la bóveda
+
+- [[geClinicalAgentsMultiAgentOrchestration2026]] — Benchmark primario para evaluar la orquestación MCTS y la arquitectura Dual-Memory de ClinicalAgents.
